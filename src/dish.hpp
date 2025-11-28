@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 
 class Dish {
@@ -5,6 +6,8 @@ class Dish {
     std::string description;
 
   public:
+    Dish() : description("Empty") {}
+    
     Dish(std::string description) {
       this->description = description;
     }
@@ -12,4 +15,4 @@ class Dish {
     std::string get_description() {
       return this->description;
     }
-}
+};
