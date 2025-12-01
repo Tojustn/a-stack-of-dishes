@@ -2,6 +2,7 @@
 #include <iostream>
 
 Stack::~Stack() {
+    delete[] data;
 }
 
 void Stack::push(Dish item) {
